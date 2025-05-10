@@ -130,6 +130,33 @@ class FAQPage extends StatelessWidget {
     FAQItem(
         question: '¿Cuáles son los métodos de pago aceptados?',
         answer: 'Tarjetas de crédito, transferencias y pagos en efectivo.'),
+    FAQItem(
+        question: '¿Cómo contacto con soporte técnico?',
+        answer: 'Puedes enviarnos un mensaje desde la sección "Ayuda" o escribirnos al correo soporte@ejemplo.com.'),
+    FAQItem(
+        question: '¿Puedo eliminar mi cuenta?',
+        answer: 'Sí, en la configuración de tu perfil encontrarás la opción "Eliminar cuenta".'),
+    FAQItem(
+        question: '¿Cómo actualizo mi información personal?',
+        answer: 'Dirígete a tu perfil y selecciona "Editar información".'),
+    FAQItem(
+        question: '¿Dónde puedo ver el historial de mis compras?',
+        answer: 'En el menú principal, entra en "Mis pedidos" o "Historial de compras".'),
+    FAQItem(
+        question: '¿La app funciona sin conexión?',
+        answer: 'Algunas funciones están disponibles sin conexión, pero necesitas internet para usar todos los servicios.'),
+    FAQItem(
+        question: '¿Cómo recibo notificaciones importantes?',
+        answer: 'Activa las notificaciones en tu configuración de usuario para estar al tanto de novedades y alertas.'),
+    FAQItem(
+        question: '¿Se puede cambiar el idioma de la app?',
+        answer: 'Sí, en configuración selecciona la opción "Idioma" y elige tu preferido.'),
+    FAQItem(
+        question: '¿Qué hago si olvidé mi contraseña?',
+        answer: 'Usa la opción "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión para restablecerla.'),
+    FAQItem(
+        question: '¿Puedo acceder a la app desde varios dispositivos?',
+        answer: 'Sí, solo necesitas iniciar sesión con tu cuenta en cada dispositivo.'),
   ];
 
   @override
