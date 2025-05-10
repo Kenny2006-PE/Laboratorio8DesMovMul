@@ -64,7 +64,6 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-
 // MENÚ PRINCIPAL
 class MainMenu extends StatelessWidget {
   @override
@@ -76,7 +75,22 @@ class MainMenu extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text('Menú Principal')),
+      appBar: AppBar(
+        title: Text('Menú Principal'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            tooltip: 'Cerrar Sesión',
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (_) => LoginPage()),
+                (route) => false, // elimina todo el historial
+              );
+            },
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
@@ -104,6 +118,7 @@ class MainMenu extends StatelessWidget {
     );
   }
 }
+
 
 
 // FAQ PAGE
